@@ -1,0 +1,12 @@
+{
+  "id": "mysql_root_keys",
+  "admins": [
+    "ranish"
+  ],
+  "clients": [
+    "node-centos65"
+  ],
+  "search_query": "hostname:node-centos65",
+  "node-centos65": "nXY7cLgk31s4p2p/XV49il4lwwJFLpjvCQVb6J0gLsXNN0sdFRBbqN9VI3V9\nxtnuhYzbmM9T/1W7W5qLArbCu81bqWzhpgPlUemiS8jFxl1hRvtEkRvG8Vae\nA9OuviEcd++nbbD8boXdPB0PKYXpLcI0SkR7cm6+ilWxduXXB0ONysYj0QzQ\n53sh4AFmfWLs6rWVJYzXk9LKfZaupxRK595joRRbQFCCwAcMnbpej24Gj2TD\n6PByARpeNBSiYliA1ZW+CGN0Gco/rskqgYpfs9c+FQfBP+Za163Nx4ct1H6Q\njVBxByWLMUXD9xGjWps7mtWeE2P2MDeNBfGzk4C6dQ==\n",
+  "ranish": "y7wwViUjgnja5DrVRek5uDyTD0O/fBDtsfs2GgcgFfTiJD72ZqGSviok60Kf\n0SBKbjLos2MCZBnYDBmmbtS4y85WWuk1zlT3hk/cVBGG+lQ1RwZOE90sgSyL\nKzODk7Qt3K7owbQX8JFXFh26Hpj7lMEBwYYhut0DIKeA6dYffLIXdLOU0Wuo\nFvuIFIYIKXd6rWdhnh5VVlWtC56u9jEHgMPAbEOG7n3yaDNdmTbcXmnoLxKd\noIRWB0o03F8WKwTTQLfmpWzVhKv65KaDQzda8rL1v84Whyp6M8BmShG5ImbG\nepcvwOCzcrwW1CfgcPMzbzEviXqU53jIDSGPAA3UqQ==\n"
+}

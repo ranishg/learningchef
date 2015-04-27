@@ -1,0 +1,7 @@
+name             'apache'
+maintainer       'Ranish George'
+maintainer_email 'ranish@rhadoop.com'
+license          'all_rights'
+description      'Installs/Configures apache'
+long_description 'Installs/Configures apache'
+version          '0.2.0'

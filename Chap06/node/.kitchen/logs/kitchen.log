@@ -1,0 +1,138 @@
+I, [2015-03-29T20:13:22.408916 #5050]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-29T20:13:23.175333 #5050]  INFO -- Kitchen: -----> Creating <default-centos65>...
+E, [2015-03-29T20:13:24.752624 #5050] ERROR -- Kitchen: ------Exception-------
+E, [2015-03-29T20:13:24.752659 #5050] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-03-29T20:13:24.752678 #5050] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'centos65' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Adding box 'centos65' (v0) for provider: virtualbox
+    default: Downloading: centos65
+[K
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+Couldn't open file /Users/ranish/learningchef/Chap06/node/.kitchen/kitchen-vagrant/kitchen-node-default-centos65/centos65
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1]
+E, [2015-03-29T20:13:24.752697 #5050] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-03-29T20:13:24.752714 #5050] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-03-29T20:13:24.752730 #5050] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'centos65' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Adding box 'centos65' (v0) for provider: virtualbox
+    default: Downloading: centos65
+[K
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+Couldn't open file /Users/ranish/learningchef/Chap06/node/.kitchen/kitchen-vagrant/kitchen-node-default-centos65/centos65
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2015-03-29T20:13:24.752855 #5050] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-03-29T20:13:24.752875 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-03-29T20:13:24.752894 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-03-29T20:13:24.752911 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-03-29T20:13:24.752929 #5050] ERROR -- Kitchen: /Users/ranish/.chefdk/gem/ruby/2.1.0/gems/kitchen-vagrant-0.16.0/lib/kitchen/driver/vagrant.rb:250:in `run'
+E, [2015-03-29T20:13:24.752946 #5050] ERROR -- Kitchen: /Users/ranish/.chefdk/gem/ruby/2.1.0/gems/kitchen-vagrant-0.16.0/lib/kitchen/driver/vagrant.rb:280:in `run_vagrant_up'
+E, [2015-03-29T20:13:24.752963 #5050] ERROR -- Kitchen: /Users/ranish/.chefdk/gem/ruby/2.1.0/gems/kitchen-vagrant-0.16.0/lib/kitchen/driver/vagrant.rb:78:in `create'
+E, [2015-03-29T20:13:24.752981 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-03-29T20:13:24.752998 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-03-29T20:13:24.753015 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:413:in `call'
+E, [2015-03-29T20:13:24.753036 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:413:in `block in synchronize_or_call'
+E, [2015-03-29T20:13:24.753053 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:411:in `synchronize'
+E, [2015-03-29T20:13:24.753082 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:411:in `synchronize_or_call'
+E, [2015-03-29T20:13:24.753103 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-03-29T20:13:24.753121 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-03-29T20:13:24.753246 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-03-29T20:13:24.753266 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-03-29T20:13:24.753285 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-03-29T20:13:24.753305 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-03-29T20:13:24.753329 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-03-29T20:13:24.753349 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-03-29T20:13:24.753368 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:141:in `setup'
+E, [2015-03-29T20:13:24.753388 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-03-29T20:13:24.753407 #5050] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-03-29T20:13:24.753426 #5050] ERROR -- Kitchen: ----------------------
+I, [2015-03-29T20:15:39.613671 #5081]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-29T20:15:39.885214 #5081]  INFO -- Kitchen: -----> Creating <default-centos65>...
+E, [2015-03-29T20:15:41.465931 #5081] ERROR -- Kitchen: ------Exception-------
+E, [2015-03-29T20:15:41.465989 #5081] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-03-29T20:15:41.466020 #5081] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'centos65' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Adding box 'centos65' (v0) for provider: virtualbox
+    default: Downloading: centos65
+[K
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+Couldn't open file /Users/ranish/learningchef/Chap06/node/.kitchen/kitchen-vagrant/kitchen-node-default-centos65/centos65
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1]
+E, [2015-03-29T20:15:41.466050 #5081] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-03-29T20:15:41.466078 #5081] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-03-29T20:15:41.466105 #5081] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'centos65' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Adding box 'centos65' (v0) for provider: virtualbox
+    default: Downloading: centos65
+[K
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+Couldn't open file /Users/ranish/learningchef/Chap06/node/.kitchen/kitchen-vagrant/kitchen-node-default-centos65/centos65
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2015-03-29T20:15:41.466152 #5081] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-03-29T20:15:41.466182 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-03-29T20:15:41.466211 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-03-29T20:15:41.466243 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-03-29T20:15:41.466271 #5081] ERROR -- Kitchen: /Users/ranish/.chefdk/gem/ruby/2.1.0/gems/kitchen-vagrant-0.16.0/lib/kitchen/driver/vagrant.rb:250:in `run'
+E, [2015-03-29T20:15:41.466300 #5081] ERROR -- Kitchen: /Users/ranish/.chefdk/gem/ruby/2.1.0/gems/kitchen-vagrant-0.16.0/lib/kitchen/driver/vagrant.rb:280:in `run_vagrant_up'
+E, [2015-03-29T20:15:41.466413 #5081] ERROR -- Kitchen: /Users/ranish/.chefdk/gem/ruby/2.1.0/gems/kitchen-vagrant-0.16.0/lib/kitchen/driver/vagrant.rb:78:in `create'
+E, [2015-03-29T20:15:41.466446 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-03-29T20:15:41.466477 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-03-29T20:15:41.466506 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:413:in `call'
+E, [2015-03-29T20:15:41.466538 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:413:in `block in synchronize_or_call'
+E, [2015-03-29T20:15:41.466569 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:411:in `synchronize'
+E, [2015-03-29T20:15:41.466598 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:411:in `synchronize_or_call'
+E, [2015-03-29T20:15:41.466629 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-03-29T20:15:41.466659 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-03-29T20:15:41.466689 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-03-29T20:15:41.466719 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-03-29T20:15:41.466750 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-03-29T20:15:41.466780 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-03-29T20:15:41.466810 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-03-29T20:15:41.466933 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-03-29T20:15:41.466967 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:119:in `create'
+E, [2015-03-29T20:15:41.466995 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-03-29T20:15:41.467024 #5081] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-03-29T20:15:41.467053 #5081] ERROR -- Kitchen: ----------------------
+I, [2015-03-29T20:17:28.020073 #5128]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-29T20:17:28.289968 #5128]  INFO -- Kitchen: -----> Creating <default-centos65>...
+I, [2015-03-29T20:18:06.072661 #5128]  INFO -- Kitchen: -----> Kitchen is finished. (0m38.05s)
+I, [2015-03-29T21:11:36.659129 #5802]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-29T21:11:36.936517 #5802]  INFO -- Kitchen: -----> Converging <default-centos65>...
+I, [2015-03-29T21:47:30.995537 #6071]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-29T21:47:31.271723 #6071]  INFO -- Kitchen: -----> Converging <default-centos65>...
+I, [2015-03-29T21:49:36.314334 #6071]  INFO -- Kitchen: -----> Setting up <default-centos65>...
+I, [2015-03-29T21:49:36.322097 #6071]  INFO -- Kitchen: -----> Kitchen is finished. (2m5.33s)
+I, [2015-03-30T07:04:01.825554 #7599]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-03-30T07:04:02.109828 #7599]  INFO -- Kitchen: -----> Destroying <default-centos65>...
+I, [2015-03-30T07:04:05.904069 #7599]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.08s)
